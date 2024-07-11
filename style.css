@@ -7,15 +7,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Alata&display=swap');
 
 body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        background-image: url(https://i.pinimg.com/736x/d5/e8/f5/d5e8f59b8182cc885bac5cc20489f409.jpg);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(https://i.pinimg.com/736x/d5/e8/f5/d5e8f59b8182cc885bac5cc20489f409.jpg);
 }
 
 .container {
@@ -38,7 +38,7 @@ h1 {
     margin-left: 1rem;
 }
 
-h2{
+h2 {
     font-family: "Corben", serif;
     font-weight: 400;
     font-size: 3rem;
@@ -46,13 +46,15 @@ h2{
     color: #EBACBB;
     margin-top: 0;
 }
-h1, h2 {
-    line-height: 0.5; /* Ajusta esto según necesites */
+
+h1,
+h2 {
+    line-height: 0.5;
+    /* Ajusta esto según necesites */
 }
 
 p {
     color: #EBACBB;
-    
 }
 
 .date-border {
@@ -71,7 +73,7 @@ p {
     margin: 20px 0;
 }
 
-#countdown > div {
+#countdown>div {
     margin: 5px;
     padding: 10px;
     background-color: #EBACBB;
@@ -80,7 +82,7 @@ p {
     min-width: 60px;
 }
 
-#countdown > div > span {
+#countdown>div>span {
     display: block;
     font-size: 1.5rem;
     font-weight: bold;
@@ -91,13 +93,16 @@ p {
 }
 
 .border-container {
-    line-height: 0.5;
+    line-height: 1.2;
+    /* Aumentado de 0.5 */
     border: 2px solid #DCB8AF;
     border-radius: 55px;
     text-align: center;
     max-width: 80%;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 20px auto;
+    /* Añadido margen vertical */
+    padding: 20px 10px;
+    /* Ajustado el padding horizontal */
 }
 
 .first-p {
@@ -118,18 +123,21 @@ p {
     font-weight: 400;
     font-style: normal;
     font-size: 1rem;
-
-}
-.first-p, .second, .third-p {
-    margin: 5px 0; /* Ajusta el espacio vertical entre los párrafos */
 }
 
-#map { 
-    height: 300px; 
+.first-p,
+.second-p,
+.third-p {
+    margin: 10px 0;
+    /* Aumentado el margen vertical */
+}
+
+#map {
+    height: 300px;
     width: 100%;
     margin: 20px 0;
     border-radius: 35px;
-} 
+}
 
 #reminderButton {
     display: block;
@@ -158,15 +166,17 @@ p {
     0% {
         box-shadow: 0 0 0 0 rgba(235, 172, 187, 0.7);
     }
+
     70% {
         box-shadow: 0 0 0 10px rgba(235, 172, 187, 0);
     }
+
     100% {
         box-shadow: 0 0 0 0 rgba(235, 172, 187, 0);
     }
 }
 
-.sentence{
+.sentence {
     font-family: "Abril Fatface", serif;
     font-weight: 400;
     font-style: normal;
@@ -192,7 +202,9 @@ p {
     position: fixed;
     bottom: 20px;
     right: 20px;
+    z-index: 999; /* Asegurar que esté por encima del mapa */
 }
+
 .music-button {
     position: fixed;
     bottom: 20px;
@@ -222,66 +234,228 @@ p {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
 }
 
 @keyframes bounce {
-    0%, 100% {
+    0%,
+    100% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(0.9);
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     body {
-        padding: 10px;
+        padding: 5px;
     }
 
     .container {
-        padding: 1rem;
+        padding: 10px;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
+        margin-bottom: 0.2rem;
     }
 
-    button {
-        padding: 8px 16px;
-        font-size: 14px;
-    }
-
-    #countdown > div {
-        min-width: 50px;
-    }
-
-    #countdown > div > span {
+    h2 {
         font-size: 1.2rem;
-    }
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.2rem;
+        margin-top: 0.2rem;
     }
 
-    #map {
-        height: 200px;
+    .date-border {
+        max-width: 100%;
+        font-size: 0.8rem;
+        padding: 5px;
+        margin: 10px auto;
     }
 
-    button {
+    .border-container {
+        max-width: 100%;
+        padding: 5px;
+        border-radius: 15px;
+        margin: 10px auto;
+    }
+
+    .first-p,
+    .second-p,
+    .third-p {
         width: 100%;
+        box-sizing: border-box;
+        margin: 5px 0;
+        padding: 0;
+        clear: both;
+    }
+
+    .first-p {
+        font-size: 0.7rem;
+    }
+
+    .second-p {
+        font-size: 0.8rem;
+        line-height: 1.4;
+        word-break: break-word;
+    }
+
+    .third-p {
+        font-size: 0.65rem;
+        line-height: 1.4;
+        word-break: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+
+    #countdown {
         margin: 5px 0;
     }
 
-    #countdown > div {
-        min-width: 40px;
+    #countdown>div {
+        min-width: 30px;
+        padding: 3px;
+        margin: 2px;
     }
 
-    #countdown > div > span {
+    #countdown>div>span {
+        font-size: 0.8rem;
+    }
+
+    .smalltext {
+        font-size: 0.5rem;
+    }
+
+    #map {
+        height: 150px;
+        margin: 10px 0;
+    }
+
+    #reminderButton {
+        padding: 8px 16px;
+        font-size: 14px;
+        margin: 10px auto;
+    }
+
+    .share-buttons button {
+        font-size: 10px;
+        padding: 3px 6px;
+        margin: 2px;
+    }
+
+    .music-button {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    body {
+        padding: 5px;
+    }
+
+    .container {
+        padding: 5px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        margin-bottom: 0.2rem;
+    }
+
+    h2 {
         font-size: 1rem;
+        margin-top: 0.2rem;
+    }
+
+    .date-border {
+        font-size: 0.75rem;
+        padding: 5px;
+        margin: 8px auto;
+    }
+
+    .border-container {
+        padding: 5px;
+        border-radius: 10px;
+        margin: 8px auto;
+    }
+
+    .first-p {
+        font-size: 0.65rem;
+        margin: 4px 0;
+        clear: both;
+    }
+
+    .second-p {
+        font-size: 0.6rem;
+        margin: 4px 1;
+        line-height: 1.2;
+        word-break: break-word;
+        clear: both;
+    }
+
+    .third-p {
+        font-size: 0.6rem;
+        margin: 4px 1;
+        line-height: 1.2;
+        word-break: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+        clear: both;
+    }
+
+    #countdown {
+        margin: 4px 0;
+    }
+
+    #countdown>div {
+        min-width: 25px;
+        padding: 2px;
+        margin: 2px;
+    }
+
+    #countdown>div>span {
+        font-size: 0.7rem;
+    }
+
+    .smalltext {
+        font-size: 0.45rem;
+    }
+
+    #map {
+        height: 120px;
+        margin: 8px 0;
+    }
+
+    #reminderButton {
+        padding: 6px 12px;
+        font-size: 12px;
+        margin: 8px auto;
+    }
+
+    .share-buttons button {
+        font-size: 9px;
+        padding: 2px 4px;
+        margin: 1px;
+    }
+
+    .music-button {
+        width: 28px;
+        height: 28px;
+        font-size: 14px;
+        bottom: 8px;
+        right: 8px;
+        position: fixed;      
     }
 }
