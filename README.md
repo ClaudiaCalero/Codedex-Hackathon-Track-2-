@@ -49,8 +49,7 @@ This project is a web page promoting a stoop sale event in Brooklyn. The page in
 
 ### Video Demo
 #### Desktop Version
-<iframe width="800" height="450" ![Track 2_ Brooklyn Stoop Sale - Google Chrome 2024-07-12 01-20-37 (1)](https://github.com/user-attachments/assets/bba181b4-a98b-4600-8f3e-ffbfb964a5b5) frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+![Track 2_ Brooklyn Stoop Sale - Google Chrome 2024-07-12 01-20-37 (1)](https://github.com/user-attachments/assets/bba181b4-a98b-4600-8f3e-ffbfb964a5b5) width="800" height="450" 
 
 
 
