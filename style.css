@@ -46,13 +46,56 @@ h2{
     color: #EBACBB;
     margin-top: 0;
 }
+h1, h2 {
+    line-height: 0.5; /* Ajusta esto según necesites */
+}
+
+p {
+    color: #EBACBB;
+    
+}
+
+.date-border {
+    text-align: center;
+    border: 2px solid #DCB8AF;
+    border-radius: 35px;
+    padding: 10px;
+    margin: 20px auto;
+    max-width: 30%;
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+#countdown > div {
+    margin: 5px;
+    padding: 10px;
+    background-color: #EBACBB;
+    color: white;
+    border-radius: 8px;
+    min-width: 60px;
+}
+
+#countdown > div > span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.smalltext {
+    font-size: 0.8rem;
+}
+
+
+
+
 #map { 
     height: 300px; 
     width: 100%;
     margin: 20px 0;
     border-radius: 35px;
 } 
-h1, h2 {
-    line-height: 0.5; /* Ajusta esto según necesites */
-}
-
