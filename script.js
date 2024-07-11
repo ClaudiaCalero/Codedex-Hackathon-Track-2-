@@ -53,14 +53,25 @@ function share() {
     if (navigator.share) {
         navigator.share({
             title: 'Brooklyn Stoop Sale',
-            text: 'Bring your high vibrations!',
+            text: 'Dont forget to bring your high vibrations!',
             url: window.location.href
-        })
-        .then(() => console.log('Thanks for sharing!'))
-        .catch((error) => console.error('Error sharing:', error));
+        }).then(() => {
+            console.log('Thanks for sharing!');
+        }).catch(console.error);
     } else {
-        alert("Share this page: " + window.location.href);
+        shareFallback();
     }
+}
+
+function shareFallback() {
+    var twitterUrl = 'https://twitter.com/intent/tweet?url=' + encodeURIComponent(window.location.href) + '&text=' + encodeURIComponent('Check out the Brooklyn Stoop Sale! Dont forget to bring your high vibrations!');
+    var instagramUrl = 'https://www.instagram.com/share?url=' + encodeURIComponent(window.location.href) + '&title=' + encodeURIComponent('Check out the Brooklyn Stoop Sale! Dont forget to bring your high vibrations!');
+    var whatsappUrl = 'whatsapp://send?text=' + encodeURIComponent('Check out the Brooklyn Stoop Sale! Dont forget to bring your high vibrations! ') + encodeURIComponent(window.location.href);
+
+    // Open each share URL in a new tab/window
+    window.open(twitterUrl, '_blank');
+    window.open(instagramUrl, '_blank');
+    window.open(whatsappUrl, '_blank');
 }
 
 
