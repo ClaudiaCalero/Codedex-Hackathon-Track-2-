@@ -1,4 +1,4 @@
-# Stoop Sale Event in Brooklyn
+# 💌 Stoop Sale Event in Brooklyn 💌
 
 This project is a web page promoting a stoop sale event in Brooklyn. The page includes a countdown timer, an interactive map, social media sharing buttons, and an integrated Spotify player.
 
@@ -65,7 +65,7 @@ I am a student pursuing a higher degree in web and multiplatform development. I 
 <a href="www.linkedin.com/in/claudia-calero">
   <img align="left" alt="Claudia's Linkdein" width="22px" src="http://pngimg.com/uploads/linkedIn/linkedIn_PNG16.png" />
 </a>
-
+<br>
 ## My Experience with Codedex-Hackathon 🤔
 
 I had a fantastic time working on this project.🥳🥳🥳 It has been a great experience that I would love to repeat, even though there were moments of frustration. I was able to overcome all the issues that arose. In the past, I participated in a hackathon, but I did not enjoy that experience. However, I found this hackathon to be delightful and fulfilling.🫶🏻
