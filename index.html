@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,16 @@
     <link rel="stylesheet" href="style.css">
     <title>Track 2: Brooklyn Stoop Sale</title>
 </head>
+
 <body>
     <div class="container">
         <h1><img src="image.png" width="100" height="80" alt="sun icon">Save</h1>
         <h2>the Date</h2>
 
         <p class="date-border">JULY 16th 17PM </p>
-        <p>Come and join us for an unforgettable stoop sale! We are finally here, 
-            featuring &#x1F60E;one-of-a-kind treasures&#x1F60E;, your trash my treasure queens	&#128139;, live music, food, goodies, and elite vibes are waiting for you!
+        <p>Come and join us for an unforgettable stoop sale! We are finally here,
+            featuring &#x1F60E;one-of-a-kind treasures&#x1F60E;, your trash my treasure queens &#128139;, live music,
+            food, goodies, and elite vibes are waiting for you!
         </p>
 
         <div id="countdown">
@@ -40,9 +43,41 @@
             <p>CARROLL GARDEN</p>
             <p>CORNER OF COURT STREET & 2nd AVE</p>
         </div>
+
         <div id="map"></div>
 
+        <button onclick="setReminder()" id="reminderButton">Set Reminder</button>
+        <p>Don't forget to follow us for more updates and share it with your pals!&#128140;</p>
+        <p class="sentence">See y'all there!</p>
+
+        <div class="share-buttons">
+            <button onclick="addLinkedIn()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M13 21H9V9H13V11C13.8526 9.91525 15.1456 9.26857 16.525 9.237C19.0056 9.25077 21.0072 11.2694 21 13.75V21H17V14.25C16.84 13.1326 15.8818 12.3036 14.753 12.306C14.2593 12.3216 13.7932 12.5378 13.4624 12.9046C13.1316 13.2715 12.9646 13.7573 13 14.25V21ZM7 21H3V9H7V21ZM5 7C3.89543 7 3 6.10457 3 5C3 3.89543 3.89543 3 5 3C6.10457 3 7 3.89543 7 5C7 5.53043 6.78929 6.03914 6.41421 6.41421C6.03914 6.78929 5.53043 7 5 7Z"
+                        fill="#F3F3F3" />
+                </svg>
+            </button>
+            <button onclick="share()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M5.5 15C6.37466 14.9974 7.21622 14.6653 7.857 14.07L14.117 17.647C13.6834 19.3413 14.5595 21.0969 16.174 21.7692C17.7884 22.4415 19.6517 21.8265 20.5487 20.3253C21.4458 18.824 21.1047 16.8918 19.7477 15.7885C18.3908 14.6852 16.4296 14.7455 15.143 15.93L8.883 12.353C8.94863 12.1021 8.98487 11.8443 8.991 11.585L15.142 8.07C16.3629 9.17994 18.1944 9.28285 19.532 8.31668C20.8695 7.35051 21.3474 5.57944 20.6774 4.07159C20.0073 2.56374 18.3726 1.73141 16.7591 2.07657C15.1456 2.42173 13.9945 3.85 14 5.5C14.0036 5.78808 14.0429 6.0746 14.117 6.353L8.433 9.6C7.5225 8.19142 5.74072 7.62676 4.18511 8.25381C2.6295 8.88086 1.73739 10.5233 2.05826 12.1696C2.37913 13.8158 3.82277 15.0031 5.5 15Z"
+                        fill="#F3F3F3" />
+                </svg>
+            </button>
+        </div>
+        <button id="musicToggle" class="music-button">🎵</button>
+        <div id="spotifyPlayer" class="spotify-container" style="display:none;">
+            <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/playlist/37i9dQZF1E8KIw4FJ2s8zr?utm_source=generator" width="100%"
+                height="352" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+        </div>
     </div>
+    
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
