@@ -56,12 +56,16 @@ function share() {
             text: 'Bring your high vibrations!',
             url: window.location.href
         }).then(() => {
-            console.log('Thanks for sharin!');
-        })
-            .catch(console.error)
+            console.log('Thanks for sharing!');
+        }).catch((error) => {
+            console.error('Error sharing:', error);
+            alert("Unable to share. Please try again later.");
+        });
+    } else {
         alert("Share this page: " + window.location.href);
     }
 }
+
 
 document.addEventListener('DOMContentLoaded', (event) => {
     const musicToggle = document.getElementById('musicToggle');
