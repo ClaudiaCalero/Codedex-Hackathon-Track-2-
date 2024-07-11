@@ -44,3 +44,21 @@ function setReminder() {
     window.open(url, '_blank');
 
 }
+
+function addLinkedIn() {
+    window.open('https://www.linkedin.com/in/claudia-calero/', '_blank');
+}
+
+function share() {
+    if(navigator.share) {
+        navigator.share({
+            title: 'Brooklyn Stoop Sale',
+            text: 'Bring your high vibrations!',
+            url: window.location.href
+        }).then(() => {
+            console.log('Thanks for sharin!');
+        })
+        .catch(console.error)
+        alert("Share this page: " + window.location.href);
+    }
+}
