@@ -53,27 +53,62 @@ function share() {
     if (navigator.share) {
         navigator.share({
             title: 'Brooklyn Stoop Sale',
-            text: 'Dont forget to bring your high vibrations!',
+            text: 'Don\'t forget to bring your high vibrations!',
             url: window.location.href
-        }).then(() => {
-            console.log('Thanks for sharing!');
-        }).catch(console.error);
+        }).catch(error => {
+            console.error('Error sharing:', error);
+            shareFallback();
+        });
     } else {
         shareFallback();
     }
 }
 
 function shareFallback() {
-    var twitterUrl = 'https://twitter.com/intent/tweet?url=' + encodeURIComponent(window.location.href) + '&text=' + encodeURIComponent('Check out the Brooklyn Stoop Sale! Dont forget to bring your high vibrations!');
-    var instagramUrl = 'https://www.instagram.com/share?url=' + encodeURIComponent(window.location.href) + '&title=' + encodeURIComponent('Check out the Brooklyn Stoop Sale! Dont forget to bring your high vibrations!');
-    var whatsappUrl = 'whatsapp://send?text=' + encodeURIComponent('Check out the Brooklyn Stoop Sale! Dont forget to bring your high vibrations! ') + encodeURIComponent(window.location.href);
+    const text = 'Check out the Brooklyn Stoop Sale! Don\'t forget to bring your high vibrations!';
+    const url = encodeURIComponent(window.location.href);
+    const encodedText = encodeURIComponent(text);
 
-    // Open each share URL in a new tab/window
-    window.open(twitterUrl, '_blank');
-    window.open(instagramUrl, '_blank');
-    window.open(whatsappUrl, '_blank');
+    const shareOptions = [
+        { name: 'Copy Link', action: () => navigator.clipboard.writeText(window.location.href).then(() => alert('Link copied!')) },
+        { name: 'Twitter', url: `https://twitter.com/intent/tweet?text=${encodedText}&url=${url}` },
+        { name: 'Facebook', url: `https://www.facebook.com/sharer/sharer.php?u=${url}` },
+        { name: 'WhatsApp', url: `whatsapp://send?text=${encodedText} ${url}` },
+        { name: 'Instagram', action: () => alert('To share on Instagram, please copy the link and paste it in your Instagram story or post.') }
+    ];
+
+    const shareMenu = document.createElement('div');
+    Object.assign(shareMenu.style, {
+        position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
+        background: 'white', padding: '20px', borderRadius: '10px', boxShadow: '0 0 10px rgba(0,0,0,0.5)', zIndex: '1000'
+    });
+
+    shareOptions.forEach(option => {
+        const button = document.createElement('button');
+        button.textContent = option.name;
+        Object.assign(button.style, {
+            display: 'block', width: '100%', padding: '10px', margin: '5px 0',
+            border: 'none', borderRadius: '5px', background: '#007bff', color: 'white', cursor: 'pointer'
+        });
+        button.onclick = () => {
+            if (option.action) option.action();
+            else if (option.url) window.open(option.url, '_blank');
+            document.body.removeChild(shareMenu);
+        };
+        shareMenu.appendChild(button);
+    });
+
+    const closeButton = document.createElement('button');
+    closeButton.textContent = 'Close';
+    Object.assign(closeButton.style, {
+        display: 'block', width: '100%', padding: '10px', margin: '5px 0',
+        border: 'none', borderRadius: '5px', background: '#dc3545', color: 'white', cursor: 'pointer'
+    });
+    closeButton.onclick = () => document.body.removeChild(shareMenu);
+    shareMenu.appendChild(closeButton);
+
+    document.body.appendChild(shareMenu);
 }
-
 
 
 document.addEventListener('DOMContentLoaded', (event) => {
