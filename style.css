@@ -165,3 +165,25 @@ p {
         box-shadow: 0 0 0 0 rgba(235, 172, 187, 0);
     }
 }
+
+.sentence{
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.share-buttons {
+    bottom: 20px;
+    left: 20px;
+}
+
+.share-buttons button {
+    font-size: 12px;
+    padding: 5px 10px;
+    margin: 5px 0;
+    background-color: #EBACBB;
+    columns: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
