@@ -50,41 +50,17 @@ function addLinkedIn() {
 }
 
 function share() {
-    // URL de la página actual
-    var url = window.location.href;
-    // Título y texto para compartir
-    var title = 'Brooklyn Stoop Sale';
-    var text = 'Bring your high vibrations!';
-
-    // Intentar usar navigator.share si está disponible
     if (navigator.share) {
         navigator.share({
-            title: title,
-            text: text,
-            url: url
-        }).then(() => {
-            console.log('Thanks for sharing!');
-        }).catch((error) => {
-            console.error('Error sharing:', error);
-            // Fallback para compartir en redes sociales
-            showFallbackShare(url, title, text);
-        });
+            title: 'Brooklyn Stoop Sale',
+            text: 'Bring your high vibrations!',
+            url: window.location.href
+        })
+        .then(() => console.log('Thanks for sharing!'))
+        .catch((error) => console.error('Error sharing:', error));
     } else {
-        // Fallback para compartir en redes sociales
-        showFallbackShare(url, title, text);
+        alert("Share this page: " + window.location.href);
     }
-}
-
-function showFallbackShare(url, title, text) {
-    // URLs para compartir en diferentes redes sociales
-    var twitterUrl = 'https://twitter.com/intent/tweet?url=' + encodeURIComponent(url) + '&text=' + encodeURIComponent(title);
-    var instagramUrl = 'https://www.instagram.com/share?url=' + encodeURIComponent(url) + '&title=' + encodeURIComponent(title);
-    var whatsappUrl = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(title + ': ' + url);
-
-    // Abrir nuevas ventanas para cada red social
-    window.open(twitterUrl, '_blank');
-    window.open(instagramUrl, '_blank');
-    window.open(whatsappUrl, '_blank');
 }
 
 
