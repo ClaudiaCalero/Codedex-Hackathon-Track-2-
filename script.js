@@ -59,12 +59,13 @@ function share() {
             console.log('Thanks for sharing!');
         }).catch((error) => {
             console.error('Error sharing:', error);
-            alert("Unable to share. Please try again later.");
+            alert("There was an error sharing this page.");
         });
     } else {
         alert("Share this page: " + window.location.href);
     }
 }
+
 
 
 document.addEventListener('DOMContentLoaded', (event) => {
