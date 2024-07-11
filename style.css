@@ -7,18 +7,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Alata&display=swap');
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-image: url(https://i.pinimg.com/736x/d5/e8/f5/d5e8f59b8182cc885bac5cc20489f409.jpg);
+}
+
+.container {
+    background-color: white;
+    padding: 5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+h1 {
+    font-family: "Italianno", cursive;
+    font-weight: 400;
+    font-size: 5.5rem;
+    font-style: normal;
+    color: #EBACBB;
+    margin-bottom: 0;
+    margin-left: 1rem;
+}
+
+h2{
+    font-family: "Corben", serif;
+    font-weight: 400;
+    font-size: 3rem;
+    font-style: normal;
+    color: #EBACBB;
+    margin-top: 0;
 }
 #map { 
-    height: 100%; } 
-    html, body { 
-    height: 100%; margin: 0; padding: 0; } 
+    height: 300px; 
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 35px;
+} 
+h1, h2 {
+    line-height: 0.5; /* Ajusta esto según necesites */
+}
 
-    

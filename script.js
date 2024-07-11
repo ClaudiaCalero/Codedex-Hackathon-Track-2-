@@ -23,12 +23,11 @@ const x = setInterval(function() {
 }, 1000);
 
 function initMap() {
-    const carrollGarden = [40.6795, -73.9957];
-    const map = L.map('map').setView(carrollGarden,15);
+    const map = L.map('map').setView([40.6795, -73.9957], 15);
     L.titleLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
-    L.marker(carrollGarden).addTo(map)
+    L.marker([40.6795, -73.9957]).addTo(map)
     .bindPopup('Carroll Gardens - Cornet of Court St and 2nd Ave')
     .openPopup();
 
