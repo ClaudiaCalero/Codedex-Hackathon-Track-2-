@@ -62,3 +62,22 @@ function share() {
         alert("Share this page: " + window.location.href);
     }
 }
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const musicToggle = document.getElementById('musicToggle');
+    const spotifyPlayer = document.getElementById('spotifyPlayer');
+    let isPlaying = false;
+
+    musicToggle.addEventListener('click', ()=> {
+        if(isPlaying) {
+            spotifyPlayer.style.display ='none';
+            musicToggle.textContent = '🎵';
+            musicToggle.classList.remove('playing');
+        } else {
+            spotifyPlayer.style.display = 'block'
+            musicToggle.textContent = '🎵';
+            musicToggle.classList.add('playing');
+        }
+        isPlaying = !isPlaying;
+    });
+});
