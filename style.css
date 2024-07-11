@@ -90,7 +90,39 @@ p {
     font-size: 0.8rem;
 }
 
+.border-container {
+    line-height: 0.5;
+    border: 2px solid #DCB8AF;
+    border-radius: 55px;
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
 
+.first-p {
+    font-family: "Domine", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.second-p {
+    font-family: 'Dela Gothic One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.third-p {
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+
+}
+.first-p, .second, .third-p {
+    margin: 5px 0; /* Ajusta el espacio vertical entre los párrafos */
+}
 
 
 #map { 
