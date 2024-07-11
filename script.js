@@ -33,3 +33,14 @@ function initMap() {
     .openPopup();
 
 }
+
+function setReminder() {
+
+    const eventDate = new Date(countDownDate);
+    const startDate = eventDate.toISOString().replace(/-|:|\.\d\d\d/g,"");
+    const endDate = new Date(eventDate.getTime() + 2*60*60*1000).toISOString().replace(/-|:|\.\d\d\d/g,"");
+
+    const url = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent('Brooklyn Stoop Sale')}&dates=${startDate}/${endDate}&details=${encodeURIComponent('Join us for an amazing stoop sale filled with unique treasures and great vibes!')}&location=${encodeURIComponent('123 Brooklyn Street, Brooklyn, NY 11201')}`;
+    window.open(url, '_blank');
+
+}
