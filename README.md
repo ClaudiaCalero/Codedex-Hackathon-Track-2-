@@ -2,6 +2,9 @@
 
 This project is a web page promoting a stoop sale event in Brooklyn. The page includes a countdown timer, an interactive map, social media sharing buttons, and an integrated Spotify player.
 
+## RULES
+https://codedex.notion.site/Track-2-Brooklyn-Stoop-Sale-01895caec65548f4bdf21d6dd7144ef2
+
 ## Technologies Used
 - 🌐 HTML5
 - 🎨 CSS3
