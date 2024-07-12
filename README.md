@@ -2,6 +2,9 @@
 
 This project is a web page promoting a stoop sale event in Brooklyn. The page includes a countdown timer, an interactive map, social media sharing buttons, and an integrated Spotify player.
 
+## RULES
+https://codedex.notion.site/Track-2-Brooklyn-Stoop-Sale-01895caec65548f4bdf21d6dd7144ef2
+
 ## Technologies Used
 - 🌐 HTML5
 - 🎨 CSS3
@@ -48,7 +51,16 @@ This project is a web page promoting a stoop sale event in Brooklyn. The page in
 [Live Demo](https://codedex-hackathon-track-2.vercel.app/)
 
 ### Video Demo
-(Leave space for the video)
+#### Desktop Version
+https://github.com/user-attachments/assets/dec71dbe-6643-478a-8e5f-b90641d6c7f8
+
+![image](https://github.com/user-attachments/assets/b2b84015-1094-49f4-897e-7c20ace03afe)
+### Mobile Version
+https://github.com/user-attachments/assets/a921fc08-4a19-4223-a2aa-69c902824418
+
+![image](https://github.com/user-attachments/assets/2870cd4b-4180-4e9f-adb9-3bda97b849ab)
+
+
 
 ### Specify which prize category you’re applying for. Choose up to 3 categories.
 - 🏆 Best Solo Hack
@@ -59,18 +71,16 @@ This project is a web page promoting a stoop sale event in Brooklyn. The page in
 
 ## About the Developer 👩🏻‍💻🤓
 
-My name is Clàudia and I'm from Barcelona. I decided to participate solo in this project because I wanted to challenge myself and practice my skills.💪🏻💪🏻💪🏻 Additionally, since I work, it is much more convenient for me to manage the project on my own. 
-I am a student pursuing a higher degree in web and multiplatform development. I have also completed a full-stack bootcamp and a Java backend bootcamp as part of my prior experience.📚
+My name is Clàudia and I'm from Barcelona. I decided to participate solo in this project because I wanted to challenge myself and practice my skills.Additionally, since I work, it is much more convenient for me to manage the project on my own. I am a student pursuing a higher degree in web and multiplatform development. I have also completed a full-stack bootcamp and a Java backend bootcamp as part of my prior experience.
 
+## My Experience with Codedex-Hackathon 🤔
+
+I had a fantastic time working on this project.It has been a great experience that I would love to repeat, even though there were moments of frustration. I was able to overcome all the issues that arose. In the past, I participated in a hackathon, but I did not enjoy that experience. However, I found this hackathon to be delightful and fulfilling.🫶🏻
+
+
+### Have an amazing day! <img src="http://37.media.tumblr.com/44d4fb34d7d9a0407c8fd5520e2c3123/tumblr_nago0vkGOD1tbhv9ro1_500.gif" width="40">
+<br>
 <a href="www.linkedin.com/in/claudia-calero">
   <img align="left" alt="Claudia's Linkdein" width="22px" src="http://pngimg.com/uploads/linkedIn/linkedIn_PNG16.png" />
 </a>
 <br>
-## My Experience with Codedex-Hackathon 🤔
-
-I had a fantastic time working on this project.🥳🥳🥳 It has been a great experience that I would love to repeat, even though there were moments of frustration. I was able to overcome all the issues that arose. In the past, I participated in a hackathon, but I did not enjoy that experience. However, I found this hackathon to be delightful and fulfilling.🫶🏻
-
-
-### Have an amazing day! <img src="http://37.media.tumblr.com/44d4fb34d7d9a0407c8fd5520e2c3123/tumblr_nago0vkGOD1tbhv9ro1_500.gif" width="40">
-
-
