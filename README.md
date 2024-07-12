@@ -65,15 +65,14 @@ https://github.com/user-attachments/assets/a921fc08-4a19-4223-a2aa-69c902824418
 
 My name is Clàudia and I'm from Barcelona. I decided to participate solo in this project because I wanted to challenge myself and practice my skills.Additionally, since I work, it is much more convenient for me to manage the project on my own. I am a student pursuing a higher degree in web and multiplatform development. I have also completed a full-stack bootcamp and a Java backend bootcamp as part of my prior experience.
 
-<a href="www.linkedin.com/in/claudia-calero">
-  <img align="left" alt="Claudia's Linkdein" width="22px" src="http://pngimg.com/uploads/linkedIn/linkedIn_PNG16.png" />
-</a>
-<br>
 ## My Experience with Codedex-Hackathon 🤔
 
 I had a fantastic time working on this project.It has been a great experience that I would love to repeat, even though there were moments of frustration. I was able to overcome all the issues that arose. In the past, I participated in a hackathon, but I did not enjoy that experience. However, I found this hackathon to be delightful and fulfilling.🫶🏻
 
 
 ### Have an amazing day! <img src="http://37.media.tumblr.com/44d4fb34d7d9a0407c8fd5520e2c3123/tumblr_nago0vkGOD1tbhv9ro1_500.gif" width="40">
-
-
+<br>
+<a href="www.linkedin.com/in/claudia-calero">
+  <img align="left" alt="Claudia's Linkdein" width="22px" src="http://pngimg.com/uploads/linkedIn/linkedIn_PNG16.png" />
+</a>
+<br>
