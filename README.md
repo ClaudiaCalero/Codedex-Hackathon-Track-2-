@@ -54,8 +54,13 @@ https://codedex.notion.site/Track-2-Brooklyn-Stoop-Sale-01895caec65548f4bdf21d6d
 #### Desktop Version
 https://github.com/user-attachments/assets/dec71dbe-6643-478a-8e5f-b90641d6c7f8
 
+![image](https://github.com/user-attachments/assets/b2b84015-1094-49f4-897e-7c20ace03afe)
 ### Mobile Version
 https://github.com/user-attachments/assets/a921fc08-4a19-4223-a2aa-69c902824418
+
+![image](https://github.com/user-attachments/assets/2870cd4b-4180-4e9f-adb9-3bda97b849ab)
+
+
 
 ### Specify which prize category you’re applying for. Choose up to 3 categories.
 - 🏆 Best Solo Hack
